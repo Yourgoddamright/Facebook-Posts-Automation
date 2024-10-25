@@ -48,7 +48,7 @@ class Bot:
                 user_box.send_keys(username)
                 password_box = self.driver.find_element_by_xpath('//input[@name="pass"]')
                 password_box.send_keys(password)
-                login_btn = self.driver.find_element_by_xpath('//input[@name="login"]')
+                login_btn = self.driver.find_element_by_xpath('//button[@name="login"]')
                 login_btn.click()
                 if self.driver.title == 'Facebook':
                     self.logged_in = True
